@@ -58,6 +58,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         auth.userDetailsService(memberService)
                 .passwordEncoder(passwordEncoder());
 
+        /** 관리자 계정 **/
         String password = passwordEncoder().encode("1111");
         auth.inMemoryAuthentication().withUser("admin").password(password).roles("ADMIN");
     }
