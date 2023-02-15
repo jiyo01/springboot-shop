@@ -23,11 +23,14 @@ public class MemberService implements UserDetailsService {
         this.memberRepository = memberRepository;
     }
 
+    //회원가입
     public Long saveMember(Member member) {
         validateDuplicateMember(member);
         memberRepository.save(member);
         return member.getId();
     }
+
+    //중복 회원 검증
     private void validateDuplicateMember(Member member) {
         memberRepository.findByUsername(member.getUsername())
                 .ifPresent(m -> {

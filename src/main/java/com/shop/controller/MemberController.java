@@ -28,12 +28,14 @@ public class MemberController {
         this.passwordEncoder = passwordEncoder;
     }
 
+    //회원가입_GET
     @GetMapping("/members/new")
     public String memberForm(Model model) {
         model.addAttribute("memberFormDto", new MemberFormDto());
         return "member/memberForm";
     }
 
+    //회원가입_POST
     @PostMapping("/members/new")
     public String memberForm(@Valid MemberFormDto memberFormDto, BindingResult bindingResult, Model model) {
 
