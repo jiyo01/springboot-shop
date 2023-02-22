@@ -100,6 +100,7 @@ public class ItemController {
         return "redirect:/";
     }
 
+    //상품 관리
     @GetMapping(value = {"/admin/items", "/admin/items/{page}"})
     public String itemManage(ItemSearchDto itemSearchDto, @PathVariable("page") Optional<Integer> page, Model model) {
         Pageable pageable = PageRequest.of(page.isPresent() ? page.get() : 0, 3);
@@ -108,6 +109,14 @@ public class ItemController {
         model.addAttribute("itemSearchDto", itemSearchDto);
         model.addAttribute("maxPage", 5);      //하단에 보여줄 페이지 번호의 최대 개수
         return "item/itemMng";
+    }
+
+    //상품 상세 페이지
+    @GetMapping("/item/{itemId}")
+    public String itemDtl(Model model, @PathVariable("itemId") Long itemId) {
+        ItemFormDto itemFormDto = itemService.getItemDtl(itemId);
+        model.addAttribute("itemFormDto", itemFormDto);
+        return "item/itemDtl";
     }
 
 }
