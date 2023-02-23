@@ -37,7 +37,7 @@
     <div id="carouselControls" class="carousel slide margin" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active item">
-                <img src="img/banner.jpg" class="d-block w-100" style="height:300px; object-fit:cover;" alt="First">
+                <img src="img/banner2.jpeg" class="d-block w-100" style="height:300px; object-fit:cover;" alt="First">
             </div>
         </div>
     </div>
@@ -52,7 +52,7 @@
             <div class="col-md-4 margin">
                 <div class="card">
                     <a th:href="'/item/' + ${item.id}" class="text-dark">
-                        <img th:src="${item.imgUrl}" class="card-img-top" th:alt="${item.itemNm}">
+                        <img th:src="${item.imgUrl}" class="card-img-top" th:alt="${item.itemNm}" style="height:300px;">
                         <div class="card-body">
                             <h5 class="card-title">[[${item.itemNm}]]</h5>
                             <p class="card-text">[[${item.itemDetail}]]</p>
