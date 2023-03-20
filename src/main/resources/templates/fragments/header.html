@@ -2,8 +2,16 @@
 <html xmlns:th="http://www.thymeleaf.org"
       xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
+<!-- 사용자 CSS 추가 -->
+<th:block layout:fragment="css">
+    <style>
+
+    </style>
+</th:block>
+
     <div th:fragment="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light"
+             style="background-color:white !important; margin-left: 100px; margin-right: 100px;">
             <a class="navbar-brand" href="/">
                 <img src="/img/logo.png">
             </a>
@@ -14,7 +22,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active" sec:authorize="hasAnyAuthority('ROLE_ADMIN')">
-                        <a class="nav-link" href="/admin/item/new">상품 등록 <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/admin/item/new">상품 등록</a>
                     </li>
                     <li class="nav-item" sec:authorize="hasAnyAuthority('ROLE_ADMIN')">
                         <a class="nav-link" href="admin/items">상품 관리</a>
@@ -43,6 +51,8 @@
                 </form>
             </div>
         </nav>
+<!--        <div style="border-bottom: 1px solid #e3e2e2;">-->
+<!--        </div>-->
     </div>
 
 </html>

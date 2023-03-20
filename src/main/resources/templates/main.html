@@ -34,7 +34,8 @@
 
 <div layout:fragment="content">
 
-    <div id="carouselControls" class="carousel slide margin" data-ride="carousel">
+    <div id="carouselControls" class="carousel slide margin"
+         style="margin-top:0px;" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active item">
                 <img src="img/banner.png" class="d-block w-100" style="height:300px;" alt="First">
@@ -47,6 +48,7 @@
         <p th:text="${itemSearchDto.searchQuery} + ' 검색 결과'" class="h3 font-weight-bold"></p>
     </div>
 
+    <div class="content" style="margin-top:15px;">
     <div class="row">
         <th:block th:each="item, status : ${items.getContent()}">
             <div class="col-md-4 margin">
@@ -91,6 +93,7 @@
         </ul>
     </div>
     <!-- 페이징 처리 끝 -->
+    </div>
 </div>
 
 </html>
