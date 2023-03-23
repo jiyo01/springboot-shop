@@ -45,10 +45,6 @@ admin/1111로 로그인하면 관리자 계정으로 접속됩니다.
 
 ![관리자 로그인](https://user-images.githubusercontent.com/123283383/227126729-baca069c-df17-461b-8b25-ef09d6864081.png)
 
-관리자는 상품등록, 상품관리, 로그아웃 메뉴가 보여집니다.
-
-![관리자2](https://user-images.githubusercontent.com/123283383/227126949-7c37b05a-3478-4217-8d63-384d09b1b72e.png)
-
 * 상품 등록
 
 ![상품등록](https://user-images.githubusercontent.com/123283383/227152660-8669dd87-2502-4202-a8be-92129c39bb2b.png)
@@ -73,10 +69,6 @@ admin/1111로 로그인하면 관리자 계정으로 접속됩니다.
 * 로그인/로그아웃
 
 ![로그인](https://user-images.githubusercontent.com/123283383/227155793-dd0df4e8-c238-47b3-bbeb-375770eae5e2.png)
-
-사용자가 로그인을 하면 장바구니, 구매이력, 로그아웃 메뉴가 보여집니다.
-
-![사용자 메뉴](https://user-images.githubusercontent.com/123283383/227156256-79aaf9e9-4a34-48bb-8e15-33f3f7b6cf43.png)
 
 * 주문
 
