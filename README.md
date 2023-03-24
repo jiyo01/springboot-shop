@@ -7,7 +7,6 @@
 * Framework : Springboot, JPA
 * Database: MySQL
 * IDE : IntelliJ
-* Build tool : Gradle
 
 ## 사용 기술
 ### [Back-End]
@@ -18,8 +17,13 @@
 
 ### [Front-End]
 * Thymeleaf
-* HTML, CSS, JavaScript
+* HTML/CSS
+* JavaScript
 * jQuery
+
+## ERD 설계
+
+![erd](https://user-images.githubusercontent.com/123283383/227593593-cce3c412-90da-4e98-86af-963370db42dd.png)
 
 ## 구현 기능
 ### [메인 페이지]
@@ -69,16 +73,3 @@ admin/1111로 로그인하면 관리자 계정으로 접속됩니다.
 * 구매 이력
 
 ![장바구니 주문](https://user-images.githubusercontent.com/123283383/227170678-8f14789e-ee6f-46d5-b0f3-cfc7d01ddb5f.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
